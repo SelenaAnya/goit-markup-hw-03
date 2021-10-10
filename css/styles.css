@@ -3,8 +3,10 @@
     --title-text-color: #ffff;
     --accent-text-color: #2196F3;
     --header-text-color: #757575;
+    --logo-text-color: black;
     --contact-text-color: rgba(255, 255, 255, 0.6);
 }
+
 
 * {
     margin: 0;
@@ -12,25 +14,36 @@
 }
 
 body {
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     width: 1500px;
     font-size: 14px;
-    margin: 0 auto;
-    padding: 0;
 }
 
-h3, h4 {
+h2, 
+h3 {
     color: var(--primary-text-color);   
 }
 
-h3 {
+h2 {
     font-size: 36px;
+    color:var(--primary-text-color);
+}
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
 }
 
 ul {
     list-style: none;
 }
+
+.header {
+    color: var(--primary-text-color)
+}
+
 
 p {
     color: var(--header-text-color);
@@ -38,22 +51,19 @@ p {
 /* ----------------header---------------- */
 .logo {
     font-family: 'Raleway', sans-serif;
-    color:var(--accent-text-color);
+    font-weight: 900px;
+    color: var(--accent-text-color);
     text-decoration: none;
+    font-style: normal;
     font-size: 26px;
-    font-family: 'Raleway',
-            sans-serif;
+    letter-spacing: 0.03em;
+    font-style: 1.2em;
 }
 
 span {
-    color:var(--primary-text-color);
+    color: var(--logo-text-color);
 }
 
-.header {
-    width: 1600px;
-    margin: 0 auto;
-    text-decoration: none;
-}
 
 .nav {
     cursor: pointer;   
@@ -65,54 +75,72 @@ span {
     text-align: right;
     height: 16px;
     text-decoration: none;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: 0.02em;
 }
 
-.menu a:hover {
-    color: var(--accent-text-color);
-}
-
-.menu a:active {
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
     color: var(--accent-text-color);
 }
 
 .contacts {
     text-align: left;
-    position: center;
     width: 170px;
 }
 
-.contacts a{
+.contacts a {
     text-decoration: none;
+    color: var(--header-text-color);
 }
 
-.contacts a:active {
+.contacts a:hover,
+.contacts a:active,
+.contacts a:focus {
     color: var(--accent-text-color);
 }
 
-.contacts a:hover {
-    color: var(--accent-text-color);
+/* -----------------------filter ---------------------- */
+.btn {
+    background: #F5F4FA;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    
 }
 
+.btn:active,
+.btn:hover,
+.btn:focus {
+    color: var(--title-text-color);
+    background: #2196F3;
+}
+
+.menu-btn .btn.current {
+    color: var(--title-text-color);
+    background: #2196F3;
+}
 
 /* ----------------Peculiarities---------------- */
 
 
 .order {
     background: #2F303A;
-    height: 600px;
     left: 0px;
     top: 80px;
 }
 
-h3 {
+h2 {
    font-weight: 900;
    letter-spacing: 0.06em;
-   color: var(--title-text-color);
-   padding-top: 200px;
-   width: 696px;
-   height: 120px;
    text-align: center;
    text-transform: uppercase;
+}
+
+.business {
+    color: var(--title-text-color);
 }
 
 button {
@@ -120,39 +148,39 @@ button {
     background-color: var(--accent-text-color) ;
     text-align: center;
     padding: 10px, 32px;
-    width: 200px;
-    height: 50px;
     left: 700px;
-    margin-top: 40px;
     letter-spacing: 0.06em;
     font-weight: 900;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,88;
     color: var(--title-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
+    /* border-radius: 4px;*/
+} 
 /*--------------- about us ---------------*/
-.about {
-    margin-top: 120px;
-}
-
-.block{
-    width: 270px;
+.team {
+    background: #F5F4FA;
 }
 
 .text {
     font-style: normal;
 }
+/* ---------project------- */
 
-h4 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+.name-block {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 }
+
+.direction p {
+    color: var(--header-text-color);
+    font-size: 16px;
+}
+
+
+
 /* -------------footer------------ */
 .our-contacts {
     background: #2F303A;
@@ -167,12 +195,11 @@ h4 {
 
 .address {
     color:var(--title-text-color);
+    text-decoration: none;
 }
 
-.e-mail2 {
-    color:var(--contact-text-color);
-}
-
+.e-mail,
 .phone {
-    color:var(--contact-text-color);
+    color: var(--contact-text-color);
+    text-decoration: none;
 }
