@@ -251,12 +251,25 @@ span {
 
 
 /*------------------------------------ about us ----------------------------------*/
-.prew {
-    display: inline-block;
+.title-we-do {
     text-align: center;
 }
 
+.we-do {
+    display: flex;
+    justify-content: space-between;
+}
 
+.we-do-prew {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.we-do-prew:first-child {
+    padding-left: 0;
+}
+
+/* ------------------------------------Team------------------------- */
 .team {
     background: #F5F4FA;
 }
@@ -266,19 +279,6 @@ span {
     text-align-last: left;
 }
 
-.we-do {
-    display: flex;
-    text-align: center;
-}
-
-.we-do-prew {
-    padding-top: 50px;
-    padding-right: 30px;
-}
-
-.we-do-prew:last-child {
-    padding-right: 0;
-}
 
 
 /* ----------------------------------project--------------------------------------- */
@@ -298,8 +298,6 @@ span {
     border: 1px solid #EEEEEE;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    /* width: 370px; */
-
 }
 
 .name-block {
