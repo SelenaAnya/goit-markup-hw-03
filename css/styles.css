@@ -175,6 +175,7 @@ span {
 }
 
 /* -------------------------------Peculiarities------------------------------------- */
+
 .filter {
     padding-top: 94px;
 }
@@ -218,6 +219,8 @@ h2 {
 
 
 /*------------------------------------ about us ----------------------------------*/
+
+
 .about-us {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -235,6 +238,7 @@ h2 {
     font-style: normal;
     text-align-last: left;
 }
+
 .we-do {
     display: flex;
     text-align: center;
@@ -300,9 +304,11 @@ h2 {
 .team {
     padding-bottom: 94px;
 }
+
 .our-team {
     padding-top: 50px;
 }
+
 
 .team-block {
     display: flex;
