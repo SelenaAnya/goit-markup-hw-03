@@ -5,7 +5,7 @@
     --header-text-color: #757575;
     --logo-text-color: black;
     --contact-text-color: rgba(255, 255, 255, 0.6);
-    --backgriund-button-color: #F5F4FA;
+    --backgriund-color: #F5F4FA;
     --border-button-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -219,7 +219,10 @@ h2 {
 
 
 /*------------------------------------ about us ----------------------------------*/
-
+.prew {
+    display: inline-block;
+    text-align: center;
+}
 
 .about-us {
     padding-top: 94px;
@@ -242,7 +245,6 @@ h2 {
 .we-do {
     display: flex;
     text-align: center;
-    padding-left: 215px;
 }
 
 .we-do-prew {
@@ -263,7 +265,7 @@ h2 {
 }
 
 .our-project {
-    padding-left: 215px;
+    /* padding-left: 215px; */
     display: flex;
     padding-top: 34px;
     text-align: center;
@@ -303,22 +305,29 @@ h2 {
 
 .team {
     padding-bottom: 94px;
+    /* display: inline-block;
+    text-align: center; */
+    background-color: var(--backgriund-color);
+
 }
 
 .our-team {
     padding-top: 50px;
 }
 
-
 .team-block {
     display: flex;
-    padding-left: 215px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .employees {
     text-align: center;
-    background-color: var(--title-text-color);
     margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .employees:last-child {
