@@ -73,19 +73,18 @@ span {
     color: var(--logo-text-color);
 }
 
-
 .nav {
     cursor: pointer;   
-    /* text-align: center; */
     padding-left: 93px;
     display: inline-block;
 }
+
 .menu {
-    /* text-align: center; */
     display: flex;
     margin-left: 93px;
     margin-right: 313px;
 }
+
 .menu-item {
     margin-right: 50px;
     margin-top: 32px;
@@ -136,6 +135,10 @@ span {
 }
 
 /* -----------------------------------filter ------------------------------------- */
+.filter {
+    display: inline-block;
+    text-align: center;
+}
 
 .menu-btn {
     display: flex;
@@ -235,6 +238,7 @@ h2 {
 .we-do {
     display: flex;
     text-align: center;
+    padding-left: 215px;
 }
 
 .we-do-prew {
@@ -292,6 +296,7 @@ h2 {
 }
 
 /* ------------------------------------------team----------------------------------- */
+
 .team {
     padding-bottom: 94px;
 }
@@ -301,6 +306,7 @@ h2 {
 
 .team-block {
     display: flex;
+    padding-left: 215px;
 }
 
 .employees {
@@ -323,6 +329,7 @@ h2 {
 }
 
 /* ----------------------------------------footer--------------------------------- */
+
 .footer {
     background: #2F303A;
     text-align-last: left;
