@@ -8,7 +8,11 @@
     --backgriund-color: #F5F4FA;
     --border-button-color: rgba(0, 0, 0, 0.15);
 }
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 * {
     margin: 0;
@@ -19,7 +23,6 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     text-align: center;
-
 }
 
 h2, 
@@ -46,14 +49,27 @@ ul {
 .header {
     color: var(--primary-text-color);
     display: flex;
+    width: 1200px;
 }
-
 
 p {
     color: var(--header-text-color);
 }
+.container {
+    width: 1200px;
+    margin-left: 215px;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 
 /* -------------------------------header---------------------------------------- */
+.header {
+    text-align: center;
+    justify-content: space-between;
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -64,7 +80,6 @@ p {
     font-size: 26px;
     letter-spacing: 0.03em;
     font-style: 1.2em;
-    padding-left: 215px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -81,8 +96,6 @@ span {
 
 .menu {
     display: flex;
-    margin-left: 93px;
-    margin-right: 313px;
 }
 
 .menu-item {
@@ -113,14 +126,16 @@ span {
 
 .contacts {
     display: flex;
-    /* text-align: right;
-    padding-right: 313px; */
+    justify-content: right;
+}
 
+.tel {
+    margin-left: 50px;
 }
 
 .contacts li{
     margin-top: 32px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .contacts a {
@@ -135,15 +150,11 @@ span {
 }
 
 /* -----------------------------------filter ------------------------------------- */
-.filter {
-    display: inline-block;
-    text-align: center;
-}
 
 .menu-btn {
     display: flex;
-    /* padding-left: 495px; */
-    text-align: center;
+    margin-bottom: 34px;
+    justify-content: center;
 }
 
 .menu-btn .btn-item:not(:last-child) {
@@ -167,39 +178,52 @@ span {
 .btn:focus {
     color: var(--title-text-color);
     background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .menu-btn .btn.current {
     color: var(--title-text-color);
     background: #2196F3;
-}
 
+
+}
+.sectoin {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* -------------------------------Peculiarities------------------------------------- */
 
-.filter {
-    padding-top: 94px;
-}
 
 .order {
     background: #2F303A;
-    left: 0px;
     top: 80px;
-    text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
+    margin: 0 auto;
 }
 
-h2 {
-   font-weight: 900;
-   letter-spacing: 0.06em;
-   text-align: center;
-   text-transform: uppercase;
-   padding-bottom: 30px;
+.business {
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+/* ----------------------------order--------------------- */
+
+
+.about-block {
+    margin-right: 20px;
+    text-align: left;
 }
 
 .business {
     color: var(--title-text-color);
-    
+    text-align: center;
 }
 
 .btn-business {
@@ -217,6 +241,14 @@ h2 {
     box-shadow: 0px 4px 4px var(--border-button-color);
 } 
 
+.text {
+    margin-top: 10px;
+}
+
+.about {
+    display: flex;
+}
+
 
 /*------------------------------------ about us ----------------------------------*/
 .prew {
@@ -224,14 +256,6 @@ h2 {
     text-align: center;
 }
 
-.about-us {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.about {
-    display: flex;
-}
 
 .team {
     background: #F5F4FA;
@@ -250,7 +274,6 @@ h2 {
 .we-do-prew {
     padding-top: 50px;
     padding-right: 30px;
-    padding-bottom: 94px;
 }
 
 .we-do-prew:last-child {
@@ -260,21 +283,23 @@ h2 {
 
 /* ----------------------------------project--------------------------------------- */
 
-.project {
-    padding-bottom: 94px;
-}
-
 .our-project {
-    /* padding-left: 215px; */
     display: flex;
-    padding-top: 34px;
-    text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.our-project .direction:not(:last-child) {
+.our-project .direction:nth-child(3n+3) {
     margin-right: 30px;
+}
+
+ .direction {
+    text-align: left;
+    border: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    /* width: 370px; */
+
 }
 
 .name-block {
@@ -287,24 +312,15 @@ h2 {
     padding-left: 24px;
 }
 
-.direction {
-    text-align-last: left;
-    border: 1px solid #EEEEEE;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-
-}
-    
 .direction p {
     color: var(--header-text-color);
     font-size: 16px;
     padding-left: 24px;
-}
+} 
 
 /* ------------------------------------------team----------------------------------- */
 
 .team {
-    padding-bottom: 94px;
     /* display: inline-block;
     text-align: center; */
     background-color: var(--backgriund-color);
@@ -312,7 +328,7 @@ h2 {
 }
 
 .our-team {
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .team-block {
@@ -364,7 +380,6 @@ h2 {
 .our-contacts {
     text-decoration: none;
     color:var(--contact-text-color);
-    padding-left: 215px;
     padding-top: 20px;
 }
 
