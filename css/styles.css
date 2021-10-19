@@ -149,6 +149,10 @@ span {
     color: var(--accent-text-color);
 }
 
+.menu-item .current {
+    color: var(--accent-text-color);
+}
+
 /* -----------------------------------filter ------------------------------------- */
 
 .menu-btn {
