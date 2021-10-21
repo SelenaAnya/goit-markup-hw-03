@@ -1,11 +1,11 @@
 :root {
     --primary-text-color: #212121;
     --title-text-color: #ffff;
-    --accent-text-color: #2196F3;
+    --accent-text-color: #2196f3;
     --header-text-color: #757575;
     --logo-text-color: black;
     --contact-text-color: rgba(255, 255, 255, 0.6);
-    --backgriund-color: #F5F4FA;
+    --backgriund-color: #f5f4fa;
     --border-button-color: rgba(0, 0, 0, 0.15);
 }
 *,
@@ -25,20 +25,20 @@ body {
     text-align: center;
 }
 
-h2, 
+h2,
 h3 {
-    color: var(--primary-text-color);   
+    color: var(--primary-text-color);
 }
 
 h2 {
-    font-size: 36px;
-    color:var(--primary-text-color);
+    color: var(--primary-text-color);
 }
+
 h3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    line-height: 1,14;
+    line-height: 1, 14;
     letter-spacing: 0.03em;
 }
 
@@ -72,7 +72,7 @@ p {
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 900px;
     color: var(--accent-text-color);
     text-decoration: none;
@@ -89,7 +89,7 @@ span {
 }
 
 .nav {
-    cursor: pointer;   
+    cursor: pointer;
     padding-left: 93px;
     display: inline-block;
 }
@@ -103,7 +103,7 @@ span {
     margin-top: 32px;
 }
 
-.menu-item:last-child{
+.menu-item:last-child {
     margin-right: 0;
 }
 
@@ -114,7 +114,8 @@ span {
     height: 16px;
     text-decoration: none;
     font-style: normal;
-    line-height: 1.63;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.02em;
 }
 
@@ -129,13 +130,12 @@ span {
     justify-content: right;
 }
 
-.tel {
-    margin-left: 50px;
+.contacts li {
+    margin-top: 32px;
 }
 
-.contacts li{
-    margin-top: 32px;
-    /* margin-right: 50px; */
+.contacts li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .contacts a {
@@ -168,9 +168,8 @@ span {
     margin-right: 8px;
 }
 
-
 .btn {
-    background: #F5F4FA;
+    background: #f5f4fa;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -184,18 +183,14 @@ span {
 .btn:hover,
 .btn:focus {
     color: var(--title-text-color);
-    background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    background: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .menu-btn .btn.current {
     color: var(--title-text-color);
-    background: #2196F3;
-
-
+    background: #2196f3;
 }
 .sectoin {
     padding-top: 94px;
@@ -203,9 +198,8 @@ span {
 }
 /* -------------------------------Peculiarities------------------------------------- */
 
-
 .order {
-    background: #2F303A;
+    background: #2f303a;
     top: 80px;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -218,48 +212,54 @@ span {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 30px;
+    line-height: 60px;
+    font-size: 44px;
+    color: var(--title-text-color);
+    text-align: center;
 }
 
 /* ----------------------------order--------------------- */
-
 
 .about-block {
     margin-right: 20px;
     text-align: left;
 }
 
-.business {
-    color: var(--title-text-color);
-    text-align: center;
-}
-
 .btn-business {
     font-family: Roboto, sans-serif;
-    background-color: var(--accent-text-color) ;
+    background-color: var(--accent-text-color);
     text-align: center;
     padding: 10px 32px;
     left: 700px;
     letter-spacing: 0.06em;
     font-weight: 900;
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1, 88;
     color: var(--title-text-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px var(--border-button-color);
-} 
+    border: none;
+    cursor: pointer;
+}
 
 .text {
     margin-top: 10px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 
 .about {
     display: flex;
 }
 
-
 /*------------------------------------ about us ----------------------------------*/
 .title-we-do {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .we-do {
@@ -278,15 +278,13 @@ span {
 
 /* ------------------------------------Team------------------------- */
 .team {
-    background: #F5F4FA;
+    background: #f5f4fa;
 }
 
 .text {
     font-style: normal;
     text-align-last: left;
 }
-
-
 
 /* ----------------------------------project--------------------------------------- */
 
@@ -296,13 +294,13 @@ span {
     justify-content: space-between;
 }
 
-.our-project .direction:nth-child(3n+3) {
+.our-project .direction:nth-child(3n + 3) {
     margin-right: 30px;
 }
 
- .direction {
+.direction {
     text-align: left;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eeeeee;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -321,19 +319,22 @@ span {
     color: var(--header-text-color);
     font-size: 16px;
     padding-left: 24px;
-} 
+}
 
 /* ------------------------------------------team----------------------------------- */
 
 .team {
-    /* display: inline-block;
-    text-align: center; */
     background-color: var(--backgriund-color);
-
 }
 
 .our-team {
     padding-bottom: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team-block {
@@ -345,9 +346,7 @@ span {
 .employees {
     text-align: center;
     margin-left: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -367,34 +366,40 @@ span {
 /* ----------------------------------------footer--------------------------------- */
 
 .footer {
-    background: #2F303A;
+    background: #2f303a;
     text-align-last: left;
     padding-top: 60px;
-}
-
-.footer a {
-    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .our-contacts {
-    display: flex;
-    height: 252px;
     font-style: normal;
-}
-
-.our-contacts {
-    text-decoration: none;
-    color:var(--contact-text-color);
     padding-top: 20px;
+    text-decoration: none;
 }
 
 .address {
-    color:var(--title-text-color);
+    color: var(--title-text-color);
     text-decoration: none;
 }
 
+.logo-footer {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.our-contacts-block li {
+    padding-bottom: 9px;
+}
+
 .e-mail,
-.phone {
+.tel {
     color: var(--contact-text-color);
     text-decoration: none;
+}
+
+.our-contacts-link a:active,
+.our-contacts-link a:hover,
+.our-contacts-link a:focus {
+    color: var(--accent-text-color);
 }
