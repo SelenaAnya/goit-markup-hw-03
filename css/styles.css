@@ -177,6 +177,8 @@ span {
     border-radius: 4px;
     text-align: center;
     border: 0;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .btn:active,
@@ -225,6 +227,10 @@ span {
     text-align: left;
 }
 
+.about-block h3 {
+    text-transform: uppercase;
+}
+
 .btn-business {
     font-family: Roboto, sans-serif;
     background-color: var(--accent-text-color);
@@ -246,6 +252,8 @@ span {
     margin-top: 10px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .about {
@@ -260,6 +268,7 @@ span {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    text-transform: none;
 }
 
 .we-do {
