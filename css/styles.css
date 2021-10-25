@@ -252,7 +252,7 @@ span {
     margin-top: 10px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -330,7 +330,7 @@ span {
     padding-left: 24px;
 }
 
-/* ------------------------------------------team----------------------------------- */
+/* --------------------------------------Команда -------------------------------- */
 
 .team {
     background-color: var(--backgriund-color);
@@ -357,6 +357,7 @@ span {
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--title-text-color);
 }
 
 .employees:last-child {
@@ -384,6 +385,10 @@ span {
 .our-contacts {
     font-style: normal;
     padding-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 
 .address {
