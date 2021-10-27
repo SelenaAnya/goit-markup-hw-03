@@ -261,6 +261,10 @@ span {
 }
 
 /*------------------------------------ about us ----------------------------------*/
+.prew .container {
+    padding-top: 0;
+}
+
 .title-we-do {
     font-style: normal;
     font-weight: bold;
