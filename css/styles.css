@@ -93,6 +93,7 @@ span {
     cursor: pointer;
     margin-left: 93px;
     display: inline-block;
+    margin-right: 331px;
 }
 
 .menu {
@@ -102,6 +103,7 @@ span {
 .menu-item {
     margin-right: 50px;
     padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .menu-item:last-child {
@@ -132,7 +134,8 @@ span {
 }
 
 .contacts li {
-    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacts li:not(:last-child) {
@@ -225,7 +228,7 @@ span {
 
 .about-block {
     width: 270px;
-    margin-right: 20px;
+    margin-right: 30px;
     text-align: left;
 }
 
@@ -278,7 +281,7 @@ span {
 
 .title-we-do {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
@@ -289,15 +292,16 @@ span {
 .we-do {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .we-do-prew {
     padding-top: 50px;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .we-do-prew:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 /* ------------------------------------Team------------------------- */
@@ -380,7 +384,7 @@ span {
 }
 
 .employees-name {
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .employees p {
