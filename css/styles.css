@@ -164,7 +164,7 @@ span {
 
 .menu-btn {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -242,6 +242,7 @@ span {
     line-height: 16px;
     letter-spacing: 0.03em;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .btn-business {
@@ -263,7 +264,6 @@ span {
 }
 
 .text {
-    margin-top: 10px;
     line-height: 24px;
     letter-spacing: 0.03em;
     font-weight: 400;
@@ -297,11 +297,11 @@ span {
 
 .we-do-prew {
     padding-top: 50px;
-    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .we-do-prew:first-child {
-    margin-left: 0;
+    margin-right: 0;
 }
 
 /* ------------------------------------Team------------------------- */
@@ -327,6 +327,7 @@ span {
 }
 
 .direction {
+    width: calc((100% - 60px) / 3);
     text-align: left;
     border: 1px solid #eeeeee;
     padding-bottom: 20px;
