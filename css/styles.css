@@ -335,8 +335,11 @@ span {
     border: 1px solid #eeeeee;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    max-width: 100%;
     max-height: auto;
+}
+
+.our-project:last-child {
+    margin-bottom: 0;
 }
 
 .name-block {
