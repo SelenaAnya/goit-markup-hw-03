@@ -7,6 +7,8 @@
     --contact-text-color: rgba(255, 255, 255, 0.6);
     --backgriund-color: #f5f4fa;
     --border-button-color: rgba(0, 0, 0, 0.15);
+    --backgriund-color-footer: #2f303a;
+    --color-direction-border: #eeeeee;
 }
 *,
 *::before,
@@ -68,7 +70,7 @@ p {
 /* ------------------------Лого + меню---------------------- */
 .header {
     text-align: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .logo {
@@ -175,7 +177,7 @@ span {
 }
 
 .btn {
-    background: #f5f4fa;
+    background: var(--backgriund-color);
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -191,14 +193,14 @@ span {
 .btn:hover,
 .btn:focus {
     color: var(--title-text-color);
-    background: #2196f3;
+    background: var(--accent-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .menu-btn .btn.current {
     color: var(--title-text-color);
-    background: #2196f3;
+    background: var(--accent-text-color);
 }
 .sectoin {
     padding-top: 94px;
@@ -207,7 +209,7 @@ span {
 /* -------------------------------Peculiarities------------------------------------- */
 
 .hero {
-    background: #2f303a;
+    background: var(--backgriund-color-footer);
     top: 80px;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -309,7 +311,7 @@ span {
 
 /* ------------------------------------Team------------------------- */
 .team {
-    background: #f5f4fa;
+    background: var(--backgriund-color);
 }
 
 .text {
@@ -329,7 +331,7 @@ span {
 .direction {
     width: calc(100% / 3 - 30px);
     text-align: left;
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--color-direction-border);
     padding-bottom: 20px;
     margin-bottom: 30px;
     max-height: auto;
@@ -413,7 +415,7 @@ span {
 /* ----------------------------------------footer--------------------------------- */
 
 .footer {
-    background: #2f303a;
+    background: var(--backgriund-color-footer);
     text-align-last: left;
     padding-top: 60px;
     padding-bottom: 60px;
