@@ -454,8 +454,8 @@ span {
     text-decoration: none;
 }
 
-.our-contacts-link a:active,
-.our-contacts-link a:hover,
-.our-contacts-link a:focus {
+.our-contacts-block a:active,
+.our-contacts-block a:hover,
+.our-contacts-block a:focus {
     color: var(--accent-text-color);
 }
