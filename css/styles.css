@@ -66,6 +66,7 @@ p {
 .header {
     color: var(--primary-text-color);
     display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -90,15 +91,11 @@ span {
 .nav {
     cursor: pointer;
     display: inline-block;
-    margin-right: 340px;
+    margin-right: 331px;
 }
 
 .menu {
     display: flex;
-}
-
-.menu-item {
-    margin-right: 50px;
 }
 
 .menu-item:last-child {
@@ -108,6 +105,7 @@ span {
 .menu li {
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-right: 50px;
 }
 
 .menu a {
