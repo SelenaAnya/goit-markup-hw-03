@@ -9,6 +9,7 @@
     --border-button-color: rgba(0, 0, 0, 0.15);
     --backgriund-color-footer: #2f303a;
     --color-direction-border: #eeeeee;
+    --color-line: #ececec;
 }
 *,
 *::before,
@@ -47,12 +48,6 @@ ul {
     list-style: none;
 }
 
-.header {
-    color: var(--primary-text-color);
-    display: flex;
-    width: 1200px;
-}
-
 p {
     color: var(--header-text-color);
 }
@@ -69,8 +64,8 @@ p {
 
 /* ------------------------Лого + меню---------------------- */
 .header {
-    text-align: center;
-    /* justify-content: space-between; */
+    color: var(--primary-text-color);
+    display: flex;
 }
 
 .logo {
@@ -85,6 +80,7 @@ p {
     padding-top: 24px;
     padding-bottom: 25px;
     line-height: 1.2;
+    margin-right: 93px;
 }
 
 span {
@@ -93,11 +89,8 @@ span {
 
 .nav {
     cursor: pointer;
-    margin-left: 93px;
     display: inline-block;
-    margin-right: 331px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-right: 340px;
 }
 
 .menu {
@@ -110,6 +103,11 @@ span {
 
 .menu-item:last-child {
     margin-right: 0;
+}
+
+.menu li {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .menu a {
@@ -132,15 +130,12 @@ span {
 
 .contacts {
     display: flex;
-    justify-content: right;
+}
+
+.contacts li {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
-/* .contacts li {
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */
 
 .contacts li:not(:last-child) {
     margin-right: 50px;
@@ -159,6 +154,11 @@ span {
 
 .menu-item .current {
     color: var(--accent-text-color);
+}
+
+.line {
+    width: 1600px;
+    border: 1px solid var(--color-line);
 }
 
 /* -----------------------------------filter ------------------------------------- */
@@ -291,6 +291,7 @@ span {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: none;
+    margin-bottom: 50px;
 }
 
 .we-do {
@@ -298,7 +299,6 @@ span {
 }
 
 .we-do-prew {
-    margin-top: 50px;
     margin-right: 30px;
     max-width: 100%;
     max-height: auto;
@@ -381,6 +381,10 @@ span {
     margin-top: 50px;
 }
 
+.employees img {
+    margin-bottom: 30px;
+}
+
 .employees {
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -389,6 +393,7 @@ span {
     max-width: 100%;
     max-height: auto;
     margin-right: 30px;
+    padding-bottom: 30px;
 }
 
 .employees:last-child {
@@ -396,16 +401,15 @@ span {
 }
 
 .employees-name {
-    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .employees p {
     padding-top: 10px;
-    padding-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
