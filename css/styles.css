@@ -155,7 +155,7 @@ span {
 }
 
 .line {
-    width: 1600px;
+    width: auto;
     border: 1px solid var(--color-line);
 }
 
