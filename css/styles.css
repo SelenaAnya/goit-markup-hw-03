@@ -336,6 +336,7 @@ contacts a {
 }
 .direction img {
     margin-bottom: 20px;
+    display: block;
 }
 
 .direction-name {
@@ -383,6 +384,7 @@ contacts a {
 
 .employees img {
     margin-bottom: 30px;
+    display: block;
 }
 
 .employees {
