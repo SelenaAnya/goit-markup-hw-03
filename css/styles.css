@@ -72,6 +72,14 @@ button {
     padding: 0 15px;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* hero section */
+
 .header-page {
     border-bottom: 1px solid #e7e9fc;
 }
@@ -266,12 +274,6 @@ button {
 }
 
                                 /* our team */
-img {
-    display: block;
-    /* width: 100%;
-    height: auto; */
-}
-
 .block-team {
     background-color: #f4f4fd;
     padding: 120px 0;
