@@ -66,10 +66,6 @@ button {
     display: inline-block;
 }
 
-img {
-    display: block;
-}
-
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -261,10 +257,12 @@ img {
     letter-spacing: 0.02em;
     color: #434455;    
     text-align: left;
-
 }
 
                                 /* our team */
+img {
+    display: block;
+}
 
 .block-team {
     background-color: #f4f4fd;
