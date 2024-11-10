@@ -4,6 +4,7 @@ body {
     color: #434455;
     background-color: #ffffff;
     font-size: 14px;
+    display: block;
 }
 
 * {
@@ -191,9 +192,9 @@ img {
     margin: 0 auto;
 }
 
-.hero-block {
+/* .hero-block {
     text-align: center;
-}
+} */
 
 .hero-title {
     font-size: 56px;
@@ -203,8 +204,8 @@ img {
     color: #ffffff;
     cursor: pointer;
     max-width: 496px;
-    display: flex;
-    text-align: center;
+    display: block;
+    justify-content: center;
 }
 
 .btn-business {
