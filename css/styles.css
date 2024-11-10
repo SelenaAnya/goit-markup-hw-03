@@ -12,7 +12,8 @@ body {
 }
 
 ul,
-li ol {
+li,
+ol {
     list-style-type: none;
     cursor: pointer;
 }
@@ -22,7 +23,7 @@ a {
     cursor: pointer;
 }
 
-/* .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -34,14 +35,15 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-} */
+}
 
 nav,
 li,
-ol a,
+ol,
+a,
 button {
     cursor: pointer;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .logo {
@@ -71,9 +73,15 @@ button {
     font-weight: 500;
 }
 
-.menu-link {
+.nav-menu {
     color: #2e2f42;
 }
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
 
 .contacts-list {
     font-style: normal;
@@ -115,22 +123,19 @@ button {
     margin-right: 40px;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: #404bbf;
-}
 
 .contacts-link:hover,
 .contacts-link:focus {
     color: #404bbf;
 }
 
+/* hero section */
 
-.title {
+.hero {
     background-color: #2e2f42;
 }
 
-.business {
+.hero-title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -152,8 +157,7 @@ button {
 /* .btn-business:active, */
 .btn-business:hover,
 .btn-business:focus {
-    color: #ffffff;
-    background: #9747ff;
+    background-color: #404BBF;
 }
 
 .about-block {
@@ -166,6 +170,7 @@ button {
     font-size: 20px;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    line-height: 1.2;
 }
 
 .text {
@@ -175,6 +180,7 @@ button {
     color: #434455;
 }
 
+/* our team */
 
 .block-team {
     background-color: #f4f4fd;
@@ -187,10 +193,6 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-}
-
-.our-team {
-    border-left-color: #ffffff;
 }
 
 .representative {
@@ -208,15 +210,12 @@ button {
     color: #434455;
 }
 
-
-
-
 .our-team {
     background-color: #ffffff;
 }
 
 
-/* ------------our portfolio----------------------- */
+/* our portfolio */
 
 .portfolio {
     font-size: 36px;
@@ -224,7 +223,7 @@ button {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color:#2e2f42;
+    color: #2e2f42;
 }
 
 .portfolio-name {
@@ -243,20 +242,10 @@ button {
 
 }
 
-/* ----------------footer menu---------------------------- */
+/* --footer menu-- */
 
 .footer {
     background-color: #2e2f42;
-    /* justify-content: center;
-    display: flex;
-} */
-
-    /* .block-footer {
-    height: 312px;
-    padding-top: 100px;
-    padding-left: 156px;
-    text-align: left;
-    /* width: 1440px; */
 }
 
 .footer-logo {
@@ -273,6 +262,4 @@ button {
     line-height: 1.5;
     color: #f4f4fd;
     letter-spacing: 0.02em;
-    /* padding-top: 16px; */
-    /* width: 264px; */
 }
