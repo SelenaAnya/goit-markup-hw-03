@@ -182,7 +182,7 @@ button {
                                 /* hero section */
 
 .section{
-    padding: 0 120px;
+    padding: 120px 0;
 }                                
 
 .hero {
@@ -268,8 +268,8 @@ button {
                                 /* our team */
 img {
     display: block;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 
 .block-team {
