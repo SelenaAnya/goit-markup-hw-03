@@ -23,6 +23,22 @@ a {
     cursor: pointer;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -35,6 +51,10 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav,
@@ -59,6 +79,17 @@ img {
 .header-page {
     border-bottom: 1px solid #e7e9fc;
 }
+
+.nav-block {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -70,6 +101,11 @@ img {
     margin-right: 76px;
 }
 
+.logo-header {
+    padding: 24px 0;
+    margin-right: 76px;    
+}
+
 .logo-header .logo-text {
     color: #2e2f42;
 }
@@ -78,24 +114,20 @@ img {
     color: #f4f4fd;
 }
 
-.nav-block{
+.nav-menu {
     display: flex;
+    text-align: center;
+    gap: 40px;
 }
-.nav {
-    cursor: pointer;
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu {
     color: #2e2f42;
-    display: flex;
-    gap: 40px;
-
 }
 
 .nav-link:hover,
@@ -103,14 +135,19 @@ img {
     color: #404bbf;
 }
 
-
-.contacts-list {
+.contacts {
     font-style: normal;
+    margin-left: auto;   
+}
+.contacts-list {
     display: flex;
+    text-align: center;
     gap: 40px;
 }
 
 .contacts-link {
+    display: block;
+    padding: 24px 0;    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -132,13 +169,6 @@ img {
     padding: 24px 0;
 }
 
-.contacts-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 .contacts {
     font-style: normal;
 }
@@ -158,6 +188,11 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
+    margin: 0 auto;
+}
+
+.hero-block {
+    text-align: center;
 }
 
 .hero-title {
@@ -168,6 +203,8 @@ img {
     color: #ffffff;
     cursor: pointer;
     max-width: 496px;
+    display: flex;
+    text-align: center;
 }
 
 .btn-business {
@@ -215,13 +252,16 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #434455;    
+    text-align: left;
+
 }
 
                                 /* our team */
@@ -253,7 +293,7 @@ img {
     color: #2e2f42;
 }
 
-.text {
+.text-card {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
