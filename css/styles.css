@@ -187,11 +187,11 @@ img {
 
 .hero {
     background-color: #2e2f42;
-    padding: 188px 0;
-    margin: 0 auto;
 }
 
 .hero-block {
+    padding: 188px 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -203,8 +203,7 @@ img {
     color: #ffffff;
     cursor: pointer;
     max-width: 496px;
-    display: block;
-    justify-content: center;
+    margin-bottom: 48px;
 }
 
 .btn-business {
@@ -386,6 +385,7 @@ img {
 }
 
 .text-footer {
+    width: 264px;
     line-height: 1.5;
     color: #f4f4fd;
     letter-spacing: 0.02em;
