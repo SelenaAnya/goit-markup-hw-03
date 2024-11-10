@@ -198,9 +198,10 @@ button {
     color: #ffffff;
     cursor: pointer;
     max-width: 496px;
-    margin-bottom: 48px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .btn-business {
@@ -217,6 +218,7 @@ button {
     bottom: none;
     border-radius: 4px; 
     cursor: pointer;
+    margin: 0 auto;
 }
 
 /* .btn-business:active, */
