@@ -68,14 +68,11 @@ button {
 }
 
 .container {
-    width: 1158px;
     margin: 0 auto;
-}
-
-.container {
-
+    width: 1158px;
     padding: 0 15px;
 }
+
 
 img {
     display: block;
