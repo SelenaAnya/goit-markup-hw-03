@@ -70,6 +70,9 @@ button {
 .container {
     width: 1158px;
     padding: 0 15px;
+}
+
+.container {
     margin: 0 auto;
 }
 
